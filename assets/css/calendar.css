@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calender {
+  margin-top: 150px;
+  margin-bottom: 25px;
+}
+
+.calender .contanier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calender .content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.months {
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: #67b6ce;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.months i {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.months .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.months h1 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.months p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.week-days {
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.week-days div {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(100% / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem 0;
+  border: 1px solid;
+}
+
+.days > div {
+  font-size: 1.2rem;
+  width: calc(100% / 5);
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.next-date,
+.prev-date {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.today .day {
+  border: 1px solid tomato;
+}
+
+.day {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.day-parent:hover .day {
+  background-color: tomato;
+  color: white;
+}
+
+.parent-day {
+  position: relative;
+}
+
+.parent-day .day {
+  position: absolute;
+  top: -60px;
+  border: 1px solid;
+}
+
+.booking-parent {
+  text-align: center;
+  display: none;
+}
+
+/* Start Booking Section */
+.booking {
+  height: 100vh;
+  width: 70%;
+  margin: auto;
+  background-color: #eee;
+}
+
+.booking-details {
+  padding: 0 10px;
+}
+
+.booking .booking-header {
+  background-color: tomato;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 0;
+  padding: 10px;
+}
+
+.available-dates li {
+  background-color: tomato;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 10px;
+  color: white;
+}
+
+.checklist {
+  margin: 10px 0;
+}
+
+select {
+  margin: 15px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+input[type="email"] {
+  border: none;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  background-color: tomato;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Start Booking Section */
